@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Work+Sans:700');
+@import url("https://fonts.cdnfonts.com/css/sackers-gothic-medium");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import "./Navbar.scss";
+@import "./Home.scss";
+@import "./About.scss";
+@import "./Contact.scss";
+@import "./Footer.scss";
+@import "./Projects.scss";
+@import "./Resume.scss";
+@import "./Modal.scss";
+
+/* 1 */
+:root {
+    --font-color: #545454;
+    --background-color: #ebd1c4;
+    --hover-link: #aba6a6;
+    --cv-background: white;
+    --contact-background: beige;
+    --modal-background: beige;
+    --modalText-color: #545454;
+    --span-background: #ebd1c4;
+}
+
+/* 2 */
+[data-theme="dark"] {
+    --font-color: beige;
+    --background-color: #353430;
+    --hover-link: rgb(119, 119, 106);
+    --cv-background: beige;
+    --contact-background: #646060;
+    --modal-background: #393431;
+    --modalText-color: beige;
+    --span-background: #ebd1c4;
+}
+
+* {
+    margin: 0;
+}
+
+#root {
+    background-color: transparent;
+    height: 80vh;
+}
+
+body {
+    transition: all 1s ease 0s;
+}
+
+main {
+    position: fixed;
+    width: 100vw;
+}
+
+h2 {
+    font: bold 2rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 1em;
+    text-align: center;
+    padding-top: 7%;
+}
+
+section {
+    height: 60vh;
+    width: 70vw;
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+        padding-top: 20%;
+    }
+}
+
+// @media screen and (max-width: 1000px) {
+//     h2 {
+//         font: bold 1.5rem "sackers gothic medium", "Arial Black", Gadget, sans-serif;
+//         padding-top: 10%;
+//     }
+// }

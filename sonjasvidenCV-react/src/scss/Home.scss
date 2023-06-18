@@ -1,0 +1,131 @@
+section.home {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    transition: 0.5s;
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+
+    .text-left {
+        width: 50%;
+    }
+
+    .image-right {
+        width: 35%;
+
+        .home-pic {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 70px;
+    }
+
+
+    h2 {
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 18px;
+        padding: 10px 0px 20px;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: 2px;
+    }
+
+    p {
+        width: 90%;
+        font-size: medium;
+        font-family: 'Quicksand', sans-serif;
+
+        button {
+            font-size: 0.7em;
+            background-color: #545454;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.4s ease 0s;
+            padding: 5px;
+            font-weight: 300;
+            cursor: pointer;
+
+            a {
+                color: beige;
+                text-decoration: none;
+                font-family: "Sackers Gothic Medium", sans-serif;
+                text-transform: lowercase;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                background-color: #7a7a7a;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.home {
+        padding-top: 20%;
+
+        h1 {
+            font-family: "DM Serif Display";
+            font-size: 40px;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 10px;
+            padding: 10px 20px 20px 0px;
+        }
+
+        p {
+            font-size: 12px;
+
+            button {
+                font-size: 0.7em;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800) {
+    section.home {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.home {
+        padding-top: 15%;
+        width: auto;
+
+        h1 {
+            font-family: "DM Serif Display";
+            font-size: 70px;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            padding: 10px 20px 20px 0px;
+        }
+
+        p {
+            font-size: 15px;
+
+            button {
+                font-size: 0.7em;
+                padding: 2px;
+            }
+        }
+    }
+}
